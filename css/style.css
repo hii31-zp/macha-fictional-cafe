@@ -1,0 +1,392 @@
+@charset "UTF-8";
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  display: flex;
+  background-color: #f4fff4;
+  color: #574D4D;
+}
+
+/* style.css のどこかに追加 */
+.hamburger {
+  display: none;
+}
+
+.button{
+  background-color:#307B49;
+  padding: 10px 45px;
+  border-radius: 9999px;
+  color: white;
+  font-weight: 400;
+}
+.side{
+  width: 25%;
+  height: 100vh;
+  background-color: #307B49;
+  position: sticky;
+  top:0;
+  letter-spacing: 2.5px;
+}
+.icon-img{
+  width: 130px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.side-button{
+  margin-top: 40px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-link{
+  font-size: 20px;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.sns-button{
+  text-align: center;
+  margin-top: 50px;
+}
+.sns-image{
+  width: 40px;
+  border-radius: 20px;
+  margin: 8px;
+}
+main{
+  flex:1;
+  display: block;
+}
+
+.header{
+  width: 100%;
+  height: 90vh;
+  background-image: url(../img/greentea-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  position:relative;
+}
+.header-subtitle{
+  position: absolute;
+  right: 40px;
+  top: 50px;
+}
+.subtitle-sentence{
+  font-size: 28px;
+  color: #574D4D;
+  writing-mode: vertical-rl;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+.slider-group{
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  display: flex;
+  font-weight: nowrap;
+  overflow-x: auto;
+  padding-left: 20px;
+  padding-top: 520px;
+}
+.slider-card{
+  flex: 0 0 auto;
+  min-width: 200px;
+  height: 100%;
+  margin-right: 20px;
+}
+.slider-card-img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.content {
+  width: 95%;
+  margin: 0 auto;
+  padding: 200px 5% 100px 5%;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+.news-container{
+  flex:1;
+  min-width: 0;
+}
+.news dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding-top: 20px;
+}
+.news dt {
+  font-weight: bold;
+  color: #307B49;
+}
+.news-button{
+  text-align: center;
+  padding: 30px;
+}
+
+.menu-container{
+  flex: 1;
+  min-width: 200px;
+}
+.menu-container-img{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  gap: 1px;
+}
+.menu-img{
+  display: block;
+  width:100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 14%;
+  padding: 3px;
+}
+.macha-story{
+  width: 100%;
+  height: 65vh;
+  background-image: url(../img/greentea-new-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 90%;
+  position:relative;
+  text-align: center;
+  z-index: 3;
+}
+.macha-story-container{
+  width: 80%;
+  margin: 0 auto;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  position:relative;
+  top: 50px;
+  z-index: 1;
+}
+.story-text{
+  font-size: 20px;
+  line-height: 1.8;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  letter-spacing: 1px;
+}
+
+.shop-button{
+  font-size: 32px;
+  font-weight: 450;
+  color: white;
+  background-color: #574D4D;
+  padding: 10px 45px;
+  border-radius: 9999px;
+  display: inline-block;
+  position: relative;
+  z-index: 9; 
+  top: -50px;
+  letter-spacing: 2px;
+}
+
+.news-page-container{
+  padding: 50px;
+  padding-left: 20%;
+  padding-bottom: 70px;
+}
+.news-page-header{
+  height: 30vh;
+  background-image: linear-gradient(#66a361 22%, #9fd09e 68%, #f4fff4);
+}
+.news-page-title{
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  letter-spacing:8px;
+  text-align: center;
+  padding-top: 50px;
+}
+.news-page-detail-title{
+  font-size: 20px;
+  padding-bottom: 20px;
+ }
+ .news-page-detail-description{
+  font-size: 20px;
+ }
+.place-button{
+  font-size: 20px;
+  padding: 0 20px 10px 20px;
+  margin-bottom: 60px;
+}
+.shoplist-page-container{
+  height: auto;
+  padding: 60px;
+  text-align: center;
+}
+.shoplist-page-header{
+  height: 30vh;
+  background-image: linear-gradient(#66a361 22%, #9fd09e 68%, #f4fff4);
+}
+.shoplist-page-title{
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  letter-spacing:8px;
+  text-align: center;
+  padding-top: 50px;
+}
+.shoplist-category{
+  font-size: 28px;
+  font-weight: 400;
+  border-bottom: 2px solid #574D4D;
+  display: inline-block;
+  padding: 30px 15px 2px 15px;
+  margin-bottom: 25px;
+}
+.shop-name{
+  font-size: 24px;
+  padding: 5px;
+}
+.map{
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.menu-page-header{
+  height: 30vh;
+  background-image: linear-gradient(#66a361 22%, #9fd09e 68%, #f4fff4);
+}
+.menu-page-title{
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  letter-spacing:8px;
+  text-align: center;
+  padding-top: 50px;
+}
+.menu-page-container{
+  padding: 60px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.menu-category{
+  font-size: 24px;
+  font-weight: 400;
+  color: #574D4D;
+  border-bottom: 2px solid #574D4D;
+  display: inline-block;
+  padding: 40px 15px 20px 15px;
+}
+.menu-page-seasonal{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 60px;
+  margin-top: 50px;
+  margin: 50px 60px;
+}
+.seasonal-item{
+  flex:1;
+  width: 33.33%;
+}
+.seasonal-title{
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 380;
+  padding: 5px;
+  color: #574D4D;
+}
+.seasonal-price{
+  font-size: 16px;
+}
+.menu-page-seasonal-img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 9px;
+  display: block;
+  aspect-ratio: 1.1;
+}
+
+.menu-page-others{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  margin-top: 50px;
+  margin: 50px 60px;
+}
+.others-item{
+  flex:1;
+  width: 25%;
+}
+.others-title{
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 380;
+  padding: 5px;
+  color: #574D4D;
+}
+.others-price{
+  font-size: 16px;
+}
+.menu-page-others-img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 9px;
+  display: block;
+}
+
+
+.footer{
+  background-color: #143f23;
+  height: 58vh;
+  display: flex;
+}
+.footer-icon{
+  width: 120px;
+  margin: 40px 80px;
+}
+.footer-sns{
+  padding-left: 50px;
+}
+.footer-button-container{
+  display: flex;
+  padding: 50px 75px;
+  gap: 170px;
+}
+.footer-other-button-container{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  letter-spacing: 2.5px;
+}
+.footer-menu-button-container{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 2.5px;
+}
+.footer-menu-button-detail{
+  padding-top: 15px;
+  font-weight: normal;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 10px;
+  letter-spacing: 1px;
+}
